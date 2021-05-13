@@ -3,10 +3,17 @@ import "./App.css";
 
 import axios from 'axios'
 import Post from './Post.js'
+import styled from 'styled-components'
 
 
-
-
+const StyledApp = styled.div`
+   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+`;
 
 
 
@@ -26,9 +33,9 @@ function App() {
   console.log(nasaData)
 
   return (
-    <div className="App">
+    <StyledApp>
       <Post nasaData={nasaData} />
-    </div>
+    </StyledApp>
   );
 }
 
